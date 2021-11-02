@@ -66,6 +66,7 @@ from userbehavior
 where behavior = 'pv' 
 group by date
 order by date;
+![image2](https://github.com/wenjie086/wenjie.github.com/blob/main/图片来自%20淘宝用户行为分析2，第%209%20页.png)
     ### 结论：从上图可以看出 11 月 25 日-12 月 1 日保持稳定的水平，12/2 开始出现较为明显的增长，点击量陡增，增长率约为 26.4%。
     ### 推测是上班族因工作逛淘宝的时间少，而周末(12 月 2 日-12 月 3 日)有充足的精力和有较多空闲时间访问淘宝。
     ### 可实行的运营动作：平日运营可以将活动集中在周末进行。
