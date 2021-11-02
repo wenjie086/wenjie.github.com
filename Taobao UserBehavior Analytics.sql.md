@@ -133,8 +133,10 @@ from
 ( select category_id,COUNT(user_id) as cat_buytimes from UserBehavior where behavior='buy' group by category_id ) as a
 group by a.cat_buytimes
 order by a.cat_buytimes;
-	###结论：从上表可以更清楚的看出 27.7%的产品类目贡献了 1.6%的销售量，69.6%的产品类目贡献了 11.5%的销售量，
-    ### 这个是不符合传统零售业的二八法则，可以说明其依靠长尾理论累计销售。
+
+![image4](https://github.com/wenjie086/wenjie.github.com/blob/main/图片来自%20淘宝用户行为分析2，第%2014%20页.png)
+###结论：从上表可以更清楚的看出 27.7%的产品类目贡献了 1.6%的销售量，69.6%的产品类目贡献了 11.5%的销售量，
+### 这个是不符合传统零售业的二八法则，可以说明其依靠长尾理论累计销售。
 
 # 3.2.3 复购率：
 # 3.2.3.1 不同购买次数下的用户数分布情况：
