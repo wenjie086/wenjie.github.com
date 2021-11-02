@@ -145,8 +145,11 @@ select a.buy_times, count(user_id) as "人数"
 from (select user_id, count(behavior) as buy_times from userbehavior where behavior = 'buy' group by user_id) as a 
 group by a.buy_times
 order by a.buy_times;
-	###结论：从上图可以得知整体复购率为(59329-6787)/59329=88.6%，
-	###即有购买行为的用户中大概有 88.6%的用户会重复购买。上面是复购情况的可视图，可以看出大部分买家还是只购买一次。
+
+![image6](https://github.com/wenjie086/wenjie.github.com/blob/main/图片来自%20淘宝用户行为分析2，第%2015%20页.png)
+
+###结论：从上图可以得知整体复购率为(59329-6787)/59329=88.6%，
+###即有购买行为的用户中大概有 88.6%的用户会重复购买。上面是复购情况的可视图，可以看出大部分买家还是只购买一次。
 
 # 3.2.3.2 复购率最高的用户以及他们购买的产品：
 select user_id, count(behavior) as buy_times
