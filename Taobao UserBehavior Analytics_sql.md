@@ -33,7 +33,8 @@ select count(distinct user_id) as "UV",
 	(select count(*) from userbehavior where behavior ='pv') as "PV",
 	(select count(*) from userbehavior where behavior ='pv') / count(distinct user_id) as "PV/UV"
 from userbehavior;
-
+ ![image1](https://github.com/wenjie086/wenjie.github.com/blob/main/图片来自%20淘宝用户行为分析2，第%207%20页.png)
+ 
 # 2.3获取跳失率（只有点击行为的用户/总用户数）的数据：
 select count(distinct user_id) 
 from userbehavior
