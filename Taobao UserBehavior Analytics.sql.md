@@ -135,6 +135,7 @@ group by a.cat_buytimes
 order by a.cat_buytimes;
 
 ![image4](https://github.com/wenjie086/wenjie.github.com/blob/main/图片来自%20淘宝用户行为分析2，第%2014%20页.png)
+
 ###结论：从上表可以更清楚的看出 27.7%的产品类目贡献了 1.6%的销售量，69.6%的产品类目贡献了 11.5%的销售量，
 ### 这个是不符合传统零售业的二八法则，可以说明其依靠长尾理论累计销售。
 
