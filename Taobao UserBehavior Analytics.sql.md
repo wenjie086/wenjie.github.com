@@ -33,8 +33,6 @@ select count(distinct user_id) as "UV",
 	(select count(*) from userbehavior where behavior ='pv') as "PV",
 	(select count(*) from userbehavior where behavior ='pv') / count(distinct user_id) as "PV/UV"
 from userbehavior;
-
- ![image1](https://github.com/wenjie086/wenjie.github.com/blob/main/图片来自%20淘宝用户行为分析2，第%207%20页.png)
  
 # 2.3获取跳失率（只有点击行为的用户/总用户数）的数据：
 select count(distinct user_id) 
@@ -52,6 +50,8 @@ group by behavior;
     # 同时，仍有部分用户行为路径为：点击-直接购买。这也同样说明了，用户浏览页面次数较多而使用加入购物车和收藏功能较少。
     # 因此，我们可以得到的大概猜测是问题出现在了收藏和加入购物车的阶段环节，且该环节也是我们需要重点提升的指标。
 
+ ![image1](https://github.com/wenjie086/wenjie.github.com/blob/main/图片来自%20淘宝用户行为分析2，第%207%20页.png)
+ 
 # 2.5 独立访客行为漏斗数据：
 select behavior, count(distinct user_id) as DIS_user
 from userbehavior 
